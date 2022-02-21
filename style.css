@@ -17,7 +17,7 @@ body {
 
 body {
   background: var(--red) url("valentine_card.jpg") no-repeat center;
-  background-size: 100% 100%;
+  background-size: cover;
   height: 95vh;
   overflow: hidden;
   font-family: "Karla", sans-serif;
@@ -29,9 +29,7 @@ body {
 }
 
 .container {
-  border: 10px solid white;
-  border-radius: 4px;
-  padding: 2.5em;
+  padding: 2em;
   margin-bottom: 3.5em;
 }
 
@@ -73,4 +71,20 @@ form *:not(label) {
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   border-radius: 5px;
   border: none;
+}
+
+@media (min-width: 412px) {
+  .container {
+    border: 10px solid var(--white);
+    border-radius: 4px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    background-size: 100% 100%;
+  }
+  .container {
+    padding: 2.5em;
+  }
 }
